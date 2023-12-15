@@ -1,0 +1,773 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  color: $b0;
+  line-height: 1.5;
+  background-color: $b100;
+}
+
+//headerTitle
+.headerTitle {
+  max-width: 1920px;
+}
+header {
+  height: 80px;
+  margin: 0 16.25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $b0;
+  @include phone {
+    margin: 0 3.2%;
+  }
+  .logo {
+    width: 244.99px;
+    img {
+      max-width: 100%;
+    }
+    @include phone {
+      width: 147px;
+    }
+  }
+  nav {
+    width: 84px;
+    @include tablet2 {
+      width: 40px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      @include tablet2 {
+        display: none;
+      }
+      li {
+        font-weight: 700;
+        font-size: 16px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .ham {
+      width: 40px;
+      display: none;
+      @include tablet2 {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .exit {
+      width: 40px;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//home_title
+.title {
+  margin: 0 16.25%;
+  padding-top: 40px;
+  @include phone {
+    margin: 0 3.2%;
+  }
+  p {
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 1.2;
+    @include tablet {
+      font-size: 96px;
+    }
+    @include tablet1 {
+      font-size: 72px;
+    }
+    @include tablet2 {
+      font-size: 60px;
+    }
+    @include tablet3 {
+      font-size: 48px;
+    }
+  }
+  a {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid $b0;
+    border-radius: 16px;
+    text-decoration: none;
+  }
+  .img {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 540px;
+      @include motin {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//footer
+
+//menu_content
+.content {
+  height: 584px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+}
+
+//home_content
+.service {
+  margin: 160px 16.25%;
+  @include phone {
+    margin: 120px 3.2%;
+  }
+  .paragraph {
+    display: flex;
+    @include motin {
+      flex-wrap: wrap;
+    }
+
+    .left {
+      margin-left: 0.15%;
+      margin-right: 1.85%;
+      width: 32.6%;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.2;
+      @include motin {
+        width: 100%;
+        font-size: 26px;
+        margin-bottom: 24px;
+      }
+      @include phone {
+        font-size: 20px;
+      }
+    }
+    .right {
+      width: 67.4%;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.2;
+      @include motin {
+        width: 100%;
+        font-size: 40px;
+      }
+      @include phone {
+        font-size: 32px;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 160px;
+    flex-wrap: wrap;
+    .card {
+      width: 32%;
+      border: 1px solid $b80;
+      border-radius: 16px;
+      padding: 4.16vw 2.08vw;
+      @include motin {
+        width: 100%;
+        padding: 10.67vw 5.33vw;
+      }
+      .img {
+        width: 80px;
+        color: $b0;
+        img {
+          width: 100%;
+        }
+      }
+      h4 {
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 900;
+        margin: 20px 0;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .middle {
+      @include motin {
+        margin: 12px 0;
+      }
+    }
+  }
+}
+.partner {
+  margin: 0 16.25%;
+  @include phone {
+    margin: 0 0;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    @include phone {
+      padding: 0 12px;
+    }
+  }
+  .imgLogo {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 160px;
+    .logos {
+      display: flex;
+      overflow: hidden;
+      height: 40px;
+      position: relative;
+      .linearGradient-l {
+        z-index: 1;
+        position: absolute;
+        width: 15.12%;
+        height: 40px;
+        background: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 0)
+        );
+        @include phone {
+          width: 21.87%;
+        }
+      }
+      .linearGradient-r {
+        right: 0;
+        z-index: 1;
+        position: absolute;
+        width: 15.12%;
+        height: 40px;
+        background: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1)
+        );
+        @include phone {
+          width: 21.87%;
+        }
+      }
+
+      .logo {
+        height: 40px;
+        margin-right: 20px;
+      }
+      .left {
+        margin-left: 16px;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 153px;
+    @include phone {
+      padding: 0 12px;
+    }
+    .card {
+      background-color: rgba(256, 256, 256, 0.08);
+      padding: 40px;
+      border-radius: 16px;
+      width: 32.1%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (max-width: 1032px) {
+        width: 100%;
+      }
+      .starsAndComment {
+        background-color: transparent;
+        .stars {
+          display: flex;
+          justify-content: space-between;
+          width: 96px;
+          height: 16px;
+          background-color: transparent;
+          margin-bottom: 20px;
+          flex-basis: 16px;
+          img {
+            background-color: transparent;
+          }
+        }
+        .comment {
+          background-color: transparent;
+          p {
+            background-color: transparent;
+          }
+        }
+      }
+
+      .person {
+        background-color: transparent;
+        margin-top: 20px;
+        flex-basis: 48px;
+        .imgPerson {
+          display: flex;
+          background-color: transparent;
+          flex-wrap: wrap;
+          img {
+            width: 48px;
+            background-color: transparent;
+            margin-right: 16px;
+          }
+          .info {
+            flex-basis: 144px;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 1.5;
+            h5 {
+              background-color: transparent;
+              font-size: 16px;
+              font-weight: 700;
+            }
+            p {
+              background-color: transparent;
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.application {
+  .app {
+    background-color: $b0;
+    padding: 8.33% 16.25%;
+    border-radius: 160px;
+    @include phone {
+      padding: 21.33% 3.2%;
+      border-radius: 20px;
+    }
+    h2 {
+      background-color: $b0;
+      color: $b100;
+      font-size: 80px;
+      line-height: 1.2;
+      font-weight: 900;
+      margin-bottom: 80px;
+      @include phone {
+        font-size: 32px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 287px;
+      }
+    }
+    .search {
+      background-color: $b20;
+      border-radius: 16px;
+      padding: 20px 40px;
+      display: flex;
+      margin-bottom: 24px;
+      @include phone {
+        margin-bottom: 16px;
+      }
+      img {
+        background-color: transparent;
+        width: 24px;
+        margin-right: 12px;
+      }
+      p {
+        color: $b60;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+    .select {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      @include phone {
+        justify-content: space-between;
+        margin-bottom: 48px;
+      }
+      .selectButton {
+        background-color: transparent;
+        border: 1px solid $b20;
+        border-radius: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        @include phone {
+          order: 1;
+        }
+        p {
+          background-color: transparent;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: $b100;
+          margin-right: 12px;
+        }
+        img {
+          background-color: transparent;
+        }
+      }
+      .selectItems {
+        background-color: transparent;
+        margin: 0 auto;
+        width: 544px;
+        @include phone {
+          order: 3;
+          margin-top: 16px;
+        }
+        ul {
+          background-color: transparent;
+          display: flex;
+          @include phone {
+            flex-wrap: wrap;
+            justify-content: space-around;
+          }
+          li {
+            background-color: transparent;
+            color: $b60;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 8px 16px;
+            border-radius: 16px;
+            &:hover {
+              background-color: $b20;
+              color: $b100;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .newOrOldButton {
+        background-color: transparent;
+        border: 1px solid $b20;
+        border-radius: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        @include phone {
+          order: 2;
+        }
+        p {
+          background-color: transparent;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: $b100;
+          margin-right: 12px;
+        }
+        img {
+          background-color: transparent;
+        }
+      }
+    }
+    .appCards {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: transparent;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      @media (max-width: 1848px) {
+        justify-content: space-around;
+      }
+      @include phone {
+        margin-bottom: 32px;
+      }
+      .appCard {
+        background-color: transparent;
+        border-radius: 16px;
+        border: 1px solid $b20;
+        width: 416px;
+        margin-bottom: 24px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .cardImg {
+          background-color: transparent;
+          width: 100%;
+          overflow: hidden;
+          img {
+            background-color: transparent;
+            width: 100%;
+            transform: scale(1, 1);
+            transition: all 0.4s ease-out;
+            &:hover {
+              transform: scale(1.2, 1.2);
+              transition: transform 0.5s;
+            }
+          }
+        }
+        .cardTitle {
+          background-color: transparent;
+          padding: 20px 32px;
+          flex-shrink: 1;
+          flex-basis: 118px;
+          h3 {
+            background-color: transparent;
+            color: $b100;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+          }
+          p {
+            background-color: transparent;
+            color: $b80;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+          }
+        }
+        .author {
+          background-color: transparent;
+          padding: 20px 32px;
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid $b20;
+          border-bottom: 1px solid $b20;
+          flex-basis: 64px;
+          h3 {
+            background-color: transparent;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $b100;
+          }
+          p {
+            background-color: transparent;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $b100;
+          }
+        }
+        .type {
+          background-color: transparent;
+          padding: 20px 32px;
+          display: flex;
+          justify-content: space-between;
+          flex-basis: 64px;
+          p {
+            background-color: transparent;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $b100;
+          }
+          img {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .pages {
+      background-color: transparent;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 1232px) {
+        justify-content: center;
+      }
+      @include phone {
+        justify-content: flex-end;
+      }
+      a {
+        display: block;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-decoration: none;
+        color: $b100;
+        border-radius: 16px;
+        padding-top: 13.25px;
+        padding-bottom: 13.25px;
+        padding-left: 21.133px;
+        padding-right: 21.133px;
+        &:hover {
+          background-color: $b100;
+          color: $b0;
+        }
+        img {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.now {
+  margin: 0 16.25%;
+  margin-top: 87px;
+  margin-bottom: 80px;
+  padding: 6.17% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include phone {
+    margin: 40px 0;
+    padding: 120px 20.13%;
+  }
+  h3 {
+    color: $b0;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+    @include phone {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  a {
+    display: flex;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 32px;
+    border: 1px solid $b0;
+    border-radius: 16px;
+    flex-wrap: wrap;
+    p {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-right: 12px;
+    }
+    img {
+      width: 24px;
+    }
+  }
+}
+
+// footer
+footer {
+  margin: 0 16.25%;
+  @include phone {
+    margin: 0 3.2%;
+  }
+  .index {
+    padding: 80px 0;
+    border-top: 1px solid $b0;
+    border-bottom: 1px solid $b0;
+    display: flex;
+    position: relative;
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+    .logo {
+      position: absolute;
+      right: 0;
+      height: 40px;
+      @media (max-width: 700px) {
+        position: static;
+        margin-bottom: 40px;
+      }
+      img {
+        height: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 1.2;
+        color: $b0;
+        text-decoration: none;
+        @include phone {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    @media (max-width: 850px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include phone {
+      padding-right: 12px;
+    }
+    .copyright {
+      padding: 12px 0;
+      @media (max-width: 850px) {
+        order: 1;
+      }
+    }
+    .socialMedias {
+      margin-left: calc((100% - 495.96px) / 802 * 100);
+      margin-right: calc((100% - 495.96px) / 802 * 702);
+      width: 254px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 850px) {
+        order: 3;
+        width: 70%;
+        margin: 0;
+      }
+      .socialMedia {
+        padding: 12px 0;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+    }
+    .backToTopLink {
+      text-decoration: none;
+      padding: 12px 0;
+      display: flex;
+      @media (max-width: 850px) {
+        order: 2;
+      }
+      .backToTop {
+        padding: 0;
+        margin-right: 12px;
+      }
+      img {
+        width: 16px;
+      }
+    }
+  }
+}

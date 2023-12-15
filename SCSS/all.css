@@ -1,0 +1,987 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+  background-color: #000000;
+}
+
+.headerTitle {
+  max-width: 1920px;
+}
+
+header {
+  height: 80px;
+  margin: 0 16.25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+}
+@media (max-width: 375px) {
+  header {
+    margin: 0 3.2%;
+  }
+}
+header .logo {
+  width: 244.99px;
+}
+header .logo img {
+  max-width: 100%;
+}
+@media (max-width: 375px) {
+  header .logo {
+    width: 147px;
+  }
+}
+header nav {
+  width: 84px;
+}
+@media (max-width: 564px) {
+  header nav {
+    width: 40px;
+  }
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 564px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav ul li {
+  font-weight: 700;
+  font-size: 16px;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav .ham {
+  width: 40px;
+  display: none;
+}
+@media (max-width: 564px) {
+  header nav .ham {
+    display: block;
+  }
+}
+header nav .ham img {
+  width: 100%;
+}
+header nav .exit {
+  width: 40px;
+  display: inline-block;
+}
+header nav .exit img {
+  width: 100%;
+}
+
+.title {
+  margin: 0 16.25%;
+  padding-top: 40px;
+}
+@media (max-width: 375px) {
+  .title {
+    margin: 0 3.2%;
+  }
+}
+.title p {
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 1.2;
+}
+@media (max-width: 940px) {
+  .title p {
+    font-size: 96px;
+  }
+}
+@media (max-width: 750px) {
+  .title p {
+    font-size: 72px;
+  }
+}
+@media (max-width: 564px) {
+  .title p {
+    font-size: 60px;
+  }
+}
+@media (max-width: 470px) {
+  .title p {
+    font-size: 48px;
+  }
+}
+.title a {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  text-decoration: none;
+}
+.title .img {
+  display: flex;
+  justify-content: flex-end;
+}
+.title .img img {
+  width: 540px;
+}
+@media (max-width: 800px) {
+  .title .img img {
+    width: 100%;
+  }
+}
+
+.content {
+  height: 584px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.service {
+  margin: 160px 16.25%;
+}
+@media (max-width: 375px) {
+  .service {
+    margin: 120px 3.2%;
+  }
+}
+.service .paragraph {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .service .paragraph {
+    flex-wrap: wrap;
+  }
+}
+.service .paragraph .left {
+  margin-left: 0.15%;
+  margin-right: 1.85%;
+  width: 32.6%;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+@media (max-width: 800px) {
+  .service .paragraph .left {
+    width: 100%;
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .service .paragraph .left {
+    font-size: 20px;
+  }
+}
+.service .paragraph .right {
+  width: 67.4%;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+@media (max-width: 800px) {
+  .service .paragraph .right {
+    width: 100%;
+    font-size: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .service .paragraph .right {
+    font-size: 32px;
+  }
+}
+.service .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 160px;
+  flex-wrap: wrap;
+}
+.service .cards .card {
+  width: 32%;
+  border: 1px solid #525252;
+  border-radius: 16px;
+  padding: 4.16vw 2.08vw;
+}
+@media (max-width: 800px) {
+  .service .cards .card {
+    width: 100%;
+    padding: 10.67vw 5.33vw;
+  }
+}
+.service .cards .card .img {
+  width: 80px;
+  color: #ffffff;
+}
+.service .cards .card .img img {
+  width: 100%;
+}
+.service .cards .card h4 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin: 20px 0;
+}
+.service .cards .card p {
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (max-width: 800px) {
+  .service .cards .middle {
+    margin: 12px 0;
+  }
+}
+
+.partner {
+  margin: 0 16.25%;
+}
+@media (max-width: 375px) {
+  .partner {
+    margin: 0 0;
+  }
+}
+.partner h3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+@media (max-width: 375px) {
+  .partner h3 {
+    padding: 0 12px;
+  }
+}
+.partner .imgLogo {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+.partner .imgLogo .logos {
+  display: flex;
+  overflow: hidden;
+  height: 40px;
+  position: relative;
+}
+.partner .imgLogo .logos .linearGradient-l {
+  z-index: 1;
+  position: absolute;
+  width: 15.12%;
+  height: 40px;
+  background: linear-gradient(0.25turn, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+@media (max-width: 375px) {
+  .partner .imgLogo .logos .linearGradient-l {
+    width: 21.87%;
+  }
+}
+.partner .imgLogo .logos .linearGradient-r {
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  width: 15.12%;
+  height: 40px;
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+@media (max-width: 375px) {
+  .partner .imgLogo .logos .linearGradient-r {
+    width: 21.87%;
+  }
+}
+.partner .imgLogo .logos .logo {
+  height: 40px;
+  margin-right: 20px;
+}
+.partner .imgLogo .logos .left {
+  margin-left: 16px;
+}
+.partner .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 153px;
+}
+@media (max-width: 375px) {
+  .partner .cards {
+    padding: 0 12px;
+  }
+}
+.partner .cards .card {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 16px;
+  width: 32.1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1032px) {
+  .partner .cards .card {
+    width: 100%;
+  }
+}
+.partner .cards .card .starsAndComment {
+  background-color: transparent;
+}
+.partner .cards .card .starsAndComment .stars {
+  display: flex;
+  justify-content: space-between;
+  width: 96px;
+  height: 16px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  flex-basis: 16px;
+}
+.partner .cards .card .starsAndComment .stars img {
+  background-color: transparent;
+}
+.partner .cards .card .starsAndComment .comment {
+  background-color: transparent;
+}
+.partner .cards .card .starsAndComment .comment p {
+  background-color: transparent;
+}
+.partner .cards .card .person {
+  background-color: transparent;
+  margin-top: 20px;
+  flex-basis: 48px;
+}
+.partner .cards .card .person .imgPerson {
+  display: flex;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+.partner .cards .card .person .imgPerson img {
+  width: 48px;
+  background-color: transparent;
+  margin-right: 16px;
+}
+.partner .cards .card .person .imgPerson .info {
+  flex-basis: 144px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+.partner .cards .card .person .imgPerson .info h5 {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+}
+.partner .cards .card .person .imgPerson .info p {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.application .app {
+  background-color: #ffffff;
+  padding: 8.33% 16.25%;
+  border-radius: 160px;
+}
+@media (max-width: 375px) {
+  .application .app {
+    padding: 21.33% 3.2%;
+    border-radius: 20px;
+  }
+}
+.application .app h2 {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+@media (max-width: 375px) {
+  .application .app h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 287px;
+  }
+}
+.application .app .search {
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  padding: 20px 40px;
+  display: flex;
+  margin-bottom: 24px;
+}
+@media (max-width: 375px) {
+  .application .app .search {
+    margin-bottom: 16px;
+  }
+}
+.application .app .search img {
+  background-color: transparent;
+  width: 24px;
+  margin-right: 12px;
+}
+.application .app .search p {
+  color: #919191;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.application .app .select {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+@media (max-width: 375px) {
+  .application .app .select {
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+}
+.application .app .select .selectButton {
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .application .app .select .selectButton {
+    order: 1;
+  }
+}
+.application .app .select .selectButton p {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  margin-right: 12px;
+}
+.application .app .select .selectButton img {
+  background-color: transparent;
+}
+.application .app .select .selectItems {
+  background-color: transparent;
+  margin: 0 auto;
+  width: 544px;
+}
+@media (max-width: 375px) {
+  .application .app .select .selectItems {
+    order: 3;
+    margin-top: 16px;
+  }
+}
+.application .app .select .selectItems ul {
+  background-color: transparent;
+  display: flex;
+}
+@media (max-width: 375px) {
+  .application .app .select .selectItems ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.application .app .select .selectItems ul li {
+  background-color: transparent;
+  color: #919191;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+.application .app .select .selectItems ul li:hover {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 700;
+}
+.application .app .select .newOrOldButton {
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .application .app .select .newOrOldButton {
+    order: 2;
+  }
+}
+.application .app .select .newOrOldButton p {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  margin-right: 12px;
+}
+.application .app .select .newOrOldButton img {
+  background-color: transparent;
+}
+.application .app .appCards {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 1848px) {
+  .application .app .appCards {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 375px) {
+  .application .app .appCards {
+    margin-bottom: 32px;
+  }
+}
+.application .app .appCards .appCard {
+  background-color: transparent;
+  border-radius: 16px;
+  border: 1px solid #f2f2f2;
+  width: 416px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.application .app .appCards .appCard .cardImg {
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+.application .app .appCards .appCard .cardImg img {
+  background-color: transparent;
+  width: 100%;
+  transform: scale(1, 1);
+  transition: all 0.4s ease-out;
+}
+.application .app .appCards .appCard .cardImg img:hover {
+  transform: scale(1.2, 1.2);
+  transition: transform 0.5s;
+}
+.application .app .appCards .appCard .cardTitle {
+  background-color: transparent;
+  padding: 20px 32px;
+  flex-shrink: 1;
+  flex-basis: 118px;
+}
+.application .app .appCards .appCard .cardTitle h3 {
+  background-color: transparent;
+  color: #000000;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.application .app .appCards .appCard .cardTitle p {
+  background-color: transparent;
+  color: #525252;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.application .app .appCards .appCard .author {
+  background-color: transparent;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  flex-basis: 64px;
+}
+.application .app .appCards .appCard .author h3 {
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+.application .app .appCards .appCard .author p {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+.application .app .appCards .appCard .type {
+  background-color: transparent;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 64px;
+}
+.application .app .appCards .appCard .type p {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+.application .app .appCards .appCard .type img {
+  background-color: transparent;
+}
+.application .app .pages {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 1232px) {
+  .application .app .pages {
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .application .app .pages {
+    justify-content: flex-end;
+  }
+}
+.application .app .pages a {
+  display: block;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 16px;
+  padding-top: 13.25px;
+  padding-bottom: 13.25px;
+  padding-left: 21.133px;
+  padding-right: 21.133px;
+}
+.application .app .pages a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.application .app .pages a img {
+  background-color: transparent;
+}
+
+.now {
+  margin: 0 16.25%;
+  margin-top: 87px;
+  margin-bottom: 80px;
+  padding: 6.17% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .now {
+    margin: 40px 0;
+    padding: 120px 20.13%;
+  }
+}
+.now h3 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (max-width: 375px) {
+  .now h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
+.now a {
+  display: flex;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+.now a p {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-right: 12px;
+}
+.now a img {
+  width: 24px;
+}
+
+footer {
+  margin: 0 16.25%;
+}
+@media (max-width: 375px) {
+  footer {
+    margin: 0 3.2%;
+  }
+}
+footer .index {
+  padding: 80px 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  position: relative;
+}
+@media (max-width: 700px) {
+  footer .index {
+    flex-direction: column;
+  }
+}
+footer .index .logo {
+  position: absolute;
+  right: 0;
+  height: 40px;
+}
+@media (max-width: 700px) {
+  footer .index .logo {
+    position: static;
+    margin-bottom: 40px;
+  }
+}
+footer .index .logo img {
+  height: 100%;
+}
+footer .index .links {
+  display: flex;
+  flex-direction: column;
+}
+footer .index .links a {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-decoration: none;
+}
+@media (max-width: 375px) {
+  footer .index .links a {
+    font-size: 48px;
+  }
+}
+footer .footer {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+@media (max-width: 850px) {
+  footer .footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 375px) {
+  footer .footer {
+    padding-right: 12px;
+  }
+}
+footer .footer .copyright {
+  padding: 12px 0;
+}
+@media (max-width: 850px) {
+  footer .footer .copyright {
+    order: 1;
+  }
+}
+footer .footer .socialMedias {
+  margin-left: calc((100% - 495.96px) / 802 * 100);
+  margin-right: calc((100% - 495.96px) / 802 * 702);
+  width: 254px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 850px) {
+  footer .footer .socialMedias {
+    order: 3;
+    width: 70%;
+    margin: 0;
+  }
+}
+footer .footer .socialMedias .socialMedia {
+  padding: 12px 0;
+  text-decoration: none;
+  margin-right: 20px;
+}
+footer .footer .backToTopLink {
+  text-decoration: none;
+  padding: 12px 0;
+  display: flex;
+}
+@media (max-width: 850px) {
+  footer .footer .backToTopLink {
+    order: 2;
+  }
+}
+footer .footer .backToTopLink .backToTop {
+  padding: 0;
+  margin-right: 12px;
+}
+footer .footer .backToTopLink img {
+  width: 16px;
+}/*# sourceMappingURL=all.css.map */
