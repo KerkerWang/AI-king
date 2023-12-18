@@ -72,6 +72,8 @@ header {
 .title {
   margin: 0 16.25%;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
   @include phone {
     margin: 0 3.2%;
   }
@@ -93,24 +95,27 @@ header {
     }
   }
   a {
+    width: 162px;
     margin-top: 40px;
     margin-bottom: 100px;
-    display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 40px;
     border: 1px solid $b0;
     border-radius: 16px;
     text-decoration: none;
+    p {
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 900;
+    }
   }
   .img {
+    max-width: 41.67%;
     display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
     img {
-      width: 540px;
+      max-width: 33.33%;
       @include motin {
-        width: 100%;
+        // width: 80%;
       }
     }
   }
@@ -236,6 +241,9 @@ header {
     justify-content: space-between;
     margin-top: 80px;
     margin-bottom: 160px;
+    @include phone {
+      margin-bottom: 48px;
+    }
     .logos {
       display: flex;
       overflow: hidden;
@@ -287,6 +295,7 @@ header {
     margin-bottom: 153px;
     @include phone {
       padding: 0 12px;
+      margin-bottom: 120px;
     }
     .card {
       background-color: rgba(256, 256, 256, 0.08);
@@ -298,6 +307,9 @@ header {
       justify-content: space-between;
       @media (max-width: 1032px) {
         width: 100%;
+      }
+      @include phone {
+        padding: 20px;
       }
       .starsAndComment {
         background-color: transparent;
@@ -317,6 +329,7 @@ header {
           background-color: transparent;
           p {
             background-color: transparent;
+            line-height: 1.5;
           }
         }
       }
@@ -353,6 +366,19 @@ header {
             }
           }
         }
+      }
+    }
+    .dis {
+      @include phone {
+        display: none;
+      }
+    }
+    .dots {
+      margin: 0 auto;
+      margin-top: 24px;
+      display: none;
+      @include phone {
+        display: block;
       }
     }
   }
@@ -441,7 +467,7 @@ header {
       .selectItems {
         background-color: transparent;
         margin: 0 auto;
-        width: 544px;
+        max-width: 544px;
         @include phone {
           order: 3;
           margin-top: 16px;
@@ -449,7 +475,7 @@ header {
         ul {
           background-color: transparent;
           display: flex;
-          @include phone {
+          @media (max-width: 400px) {
             flex-wrap: wrap;
             justify-content: space-around;
           }

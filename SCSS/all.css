@@ -217,6 +217,8 @@ header nav .exit img {
 .title {
   margin: 0 16.25%;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 375px) {
   .title {
@@ -249,30 +251,27 @@ header nav .exit img {
   }
 }
 .title a {
+  width: 162px;
   margin-top: 40px;
   margin-bottom: 100px;
-  display: inline-block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 20px 40px;
   border: 1px solid #ffffff;
   border-radius: 16px;
   text-decoration: none;
 }
+.title a p {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 900;
+}
 .title .img {
+  max-width: 41.67%;
   display: flex;
-  justify-content: flex-end;
+  align-self: flex-end;
 }
 .title .img img {
-  width: 540px;
+  max-width: 33.33%;
 }
-@media (max-width: 800px) {
-  .title .img img {
-    width: 100%;
-  }
-}
-
 .content {
   height: 584px;
   display: flex;
@@ -409,6 +408,11 @@ header nav .exit img {
   margin-top: 80px;
   margin-bottom: 160px;
 }
+@media (max-width: 375px) {
+  .partner .imgLogo {
+    margin-bottom: 48px;
+  }
+}
 .partner .imgLogo .logos {
   display: flex;
   overflow: hidden;
@@ -456,6 +460,7 @@ header nav .exit img {
 @media (max-width: 375px) {
   .partner .cards {
     padding: 0 12px;
+    margin-bottom: 120px;
   }
 }
 .partner .cards .card {
@@ -470,6 +475,11 @@ header nav .exit img {
 @media (max-width: 1032px) {
   .partner .cards .card {
     width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .partner .cards .card {
+    padding: 20px;
   }
 }
 .partner .cards .card .starsAndComment {
@@ -492,6 +502,7 @@ header nav .exit img {
 }
 .partner .cards .card .starsAndComment .comment p {
   background-color: transparent;
+  line-height: 1.5;
 }
 .partner .cards .card .person {
   background-color: transparent;
@@ -525,6 +536,21 @@ header nav .exit img {
   background-color: transparent;
   font-size: 14px;
   font-weight: 400;
+}
+@media (max-width: 375px) {
+  .partner .cards .dis {
+    display: none;
+  }
+}
+.partner .cards .dots {
+  margin: 0 auto;
+  margin-top: 24px;
+  display: none;
+}
+@media (max-width: 375px) {
+  .partner .cards .dots {
+    display: block;
+  }
 }
 
 .application .app {
@@ -622,7 +648,7 @@ header nav .exit img {
 .application .app .select .selectItems {
   background-color: transparent;
   margin: 0 auto;
-  width: 544px;
+  max-width: 544px;
 }
 @media (max-width: 375px) {
   .application .app .select .selectItems {
@@ -634,7 +660,7 @@ header nav .exit img {
   background-color: transparent;
   display: flex;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .application .app .select .selectItems ul {
     flex-wrap: wrap;
     justify-content: space-around;
