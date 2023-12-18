@@ -269,9 +269,15 @@ header nav .exit img {
   display: flex;
   align-self: flex-end;
 }
+@media (max-width: 375px) {
+  .title .img {
+    max-width: 100%;
+  }
+}
 .title .img img {
   max-width: 33.33%;
 }
+
 .content {
   height: 584px;
   display: flex;

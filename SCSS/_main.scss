@@ -112,11 +112,11 @@ header {
     max-width: 41.67%;
     display: flex;
     align-self: flex-end;
+    @include phone {
+      max-width: 100%;
+    }
     img {
       max-width: 33.33%;
-      @include motin {
-        // width: 80%;
-      }
     }
   }
 }
